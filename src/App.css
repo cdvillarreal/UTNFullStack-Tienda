@@ -12,7 +12,7 @@ body {
 
 .titleStore {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-top: 0.5rem;
 }
 
@@ -21,19 +21,18 @@ body {
   width: 90%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-rows: repeat(3); */
   gap: 1.5rem;
   text-align: center;
 }
 
 img {
-  max-height: 13rem;
+  max-height: 12rem;
   padding: 0.2rem;
   margin-top: 0.5rem;
 }
 
 .nameProduct {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 0.5rem;
   color: #222222;
 }
@@ -71,4 +70,14 @@ img {
 
 .buyButton:hover {
   background-color: #2980b9;
+}
+
+.thankyou {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #2980b9;
+}
+
+.soldout {
+  filter: grayscale(1);
 }

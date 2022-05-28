@@ -3,7 +3,7 @@ import "./App.css";
 
 const App = () => (
   <div className="tienda">
-    <h1 className="titleStore">Catálogo de productos - TP N° 3</h1>
+    <h1 className="titleStore">Catálogo de productos</h1>
     <div className="container">
       <Product
         imgProduct="https://http2.mlstatic.com/D_NQ_NP_945498-MLA49272713403_032022-O.webp"
