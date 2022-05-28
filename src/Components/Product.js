@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const Product = ({
   imgProduct,
@@ -9,11 +9,21 @@ const Product = ({
   quantityProduct,
 }) => {
   const [sold, setSold] = useState(false);
-  const selling = () => setSold(true);
+  const imageProd = useRef();
+  const selling = () => {
+    setSold(true);
+    const element = imageProd.current;
+    element.classList.add("soldout");
+  };
 
   return (
     <div className="product">
-      <img src={imgProduct} alt={nameProduct} className="imageProduct" />
+      <img
+        ref={imageProd}
+        src={imgProduct}
+        alt={nameProduct}
+        className="imageProduct"
+      />
       <h2 className="nameProduct">{nameProduct}</h2>
       <p className="descriptionProduct">{descriptionProduct}</p>
       <p className="priceProduct">{priceProduct}</p>
