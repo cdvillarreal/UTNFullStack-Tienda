@@ -1,1 +1,1 @@
-Trabajo Práctico de una Tienda en Línea para el curso de Full Stack Developer de la UTN.
+Trabajo Práctico de una Tienda en Línea para el curso de Full Stack Developer de la UTN realizado en React.
